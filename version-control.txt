@@ -1,0 +1,4 @@
+#CSE210 Week 1 What is Version control
+# Chris Riordan
+
+Version control is a software system, that tracks changes in files as changes are made. It is designed to work with multiple users to keep files and projects in sync with each other. It allows for a central source for compiling software, or deploying websites. I've used git and github, in previous classes, for web development to deploy websites for class. But also allows syncing files across several devices. Most development platforms have integrated version control support. VSCode used for this course uses git integration. When commiting files, the best practice is to put proper commit messages as to what changes are being made.  An example is: git commit -m "Fixed problems where nothing was displayed on the screen." 
