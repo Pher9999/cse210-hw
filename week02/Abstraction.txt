@@ -1,0 +1,27 @@
+What is abstraction and why is it important?
+
+Abstraction is the process of simplifying complex ideas. Breaking larger items into smaller details. Take the example of a phone book. 
+Large single item (Book), within it has, (Name), (Address) and (Phone number). So while you have a book, you have multiple people in 
+the book. Makes it much easier to keep track of your data. It's a ideal way to reuse code. Instead of making a complex Multi-dementional 
+list. You can put it in an Object and reference data much easier. In the Resume exercise, The resume class calls into the Job class 
+to easily manage multiple Jobs per resume. Without having to write code the same code over and over to access the data as needed. 
+This also allows easy modifying code in one spot to make larger changes, Such as new database formats, adding another variable. 
+Below is the code:
+
+public class Resume
+{
+    public string _name = "";
+    public List<Job> _jobs = new List<Job>();
+  
+ public void Display()
+    {
+        Console.WriteLine($"Name: {_name}");
+        Console.WriteLine($"Jobs: ");
+        foreach (Job j in _jobs)
+        {
+            j.Display();
+        }
+    }
+}
+
+
