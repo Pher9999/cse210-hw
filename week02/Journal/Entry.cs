@@ -1,0 +1,4 @@
+//Entry - 
+// -Date
+// -Prompt
+// -response
