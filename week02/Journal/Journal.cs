@@ -1,4 +1,8 @@
 // Journal
 // variable - Entry class
 // variable - filename
-// method - display
+// variable list - prompts
+// method - display - journal entries
+// method - display menu
+// method - save file
+// method - load file
