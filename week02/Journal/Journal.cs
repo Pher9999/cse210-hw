@@ -24,6 +24,7 @@ public class Journal
 
     public void LoadFromFile(string file)
     {
+
         string[] lines = System.IO.File.ReadAllLines(file);
 
         foreach (string line in lines)
@@ -33,7 +34,9 @@ public class Journal
             
             e._date = parts[0];
             e._promptText = parts[1];
-            e._entryText = parts[2];       
+            e._entryText = parts[2];  
+
+            _entries.Add(e);     
             
         }
     }
@@ -55,7 +58,7 @@ public class Journal
                 }
                 else
                 {
-                    // write a divider to top of each entry to seperate.
+                    // write a divider to top of each entry to separate.
                     Console.WriteLine("=========================================");
                     e.Display();
                     Console.WriteLine("=========================================");
