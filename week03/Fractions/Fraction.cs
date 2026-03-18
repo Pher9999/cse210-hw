@@ -14,7 +14,7 @@ public class Fraction
     public Fraction(int wholeNumber)
     {
         _top = wholeNumber;
-        _bottom = wholeNumber;
+        _bottom = 1;
     }
 
 
@@ -53,6 +53,6 @@ public class Fraction
 
     public double GetDecimalValue()
     {
-        return _top / _bottom;
+        return (double)_top / (double)_bottom;
     }
 }
