@@ -1,0 +1,22 @@
+Chris Riordan
+What is encapsulation and why it's important?
+
+Encapsulation is the concept of adding a layer to your class or objects, to hide the underlying code. This is done, so as you refactor or update code, The higher level program doesn't need to be changed. When you write code to save information, at first you may have it write to a simple text file. As you expand your program you may want to save it to a database. Instead of having to go back to refactor multiple chunks of code that deal with how to save. You can have it all under one method of the class. In a sense hide how the sausage is made. You can still pass the same basic variables in, Filename, text, picture. But the underlying code can adapt to what you need. Here is a single method from this weeks program showing encapsulation.
+
+public string GetDisplayText()
+    {
+        if (_isHidden)
+        {
+            string displaytext = "";
+
+            for (int i = 0; i < _text.Length; i++)
+            {
+                displaytext += "_";
+            }
+            return displaytext;
+        }
+        else
+        {
+            return _text;
+        }
+    }

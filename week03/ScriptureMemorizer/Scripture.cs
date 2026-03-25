@@ -7,6 +7,8 @@ public class Scripture()
     {
         _reference = reference;
         // Split the text into words and create Word objects
+        string[] wordArray = text.Split(' ');
+        _words = wordArray.ToList();
     }
 
     public void HideRandomWord()
