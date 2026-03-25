@@ -1,4 +1,4 @@
-public class Scripture()
+public class Scripture
 {
     Reference _reference = new Reference();
     List<Word> _words = new List<Word>();
