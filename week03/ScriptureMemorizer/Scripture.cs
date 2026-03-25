@@ -17,10 +17,12 @@ public class Scripture
     public void HideRandomWord()
     {
         // Randomly select a Word object and call its Hide method
-        Random _randomnumber = new Random();
-        int index = _randomnumber.Next(_words.Count);
+        Random _randomNumber = new Random();
+        int index = _randomNumber.Next(_words.Count);
         _words[index].Hide();
+
     }
+
 
     public string GetDisplayText()
     {
