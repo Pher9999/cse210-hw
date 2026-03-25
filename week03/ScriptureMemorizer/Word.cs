@@ -28,13 +28,13 @@ public class Word
     {
         if (_isHidden)
         {
-            string _displaytext = "";
+            string _displayText = "";
 
             for (int i = 0; i < _text.Length; i++)
             {
-                _displaytext += "_";
+                _displayText += "_";
             }
-            return _displaytext;
+            return _displayText;
         }
         else
         {
