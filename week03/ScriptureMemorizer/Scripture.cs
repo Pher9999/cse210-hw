@@ -17,13 +17,14 @@ public class Scripture()
     public string GetDisplayText()
     {
         // Get the display text from the Reference and concatenate it with the display text of each Word
+        return "";
     }
 
     public bool IsCompletelyHidden()
     {
         // Check if all Word objects are hidden
     }
-    s
+
 
 
 

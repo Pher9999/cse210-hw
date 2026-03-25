@@ -19,7 +19,7 @@ public class Word
         _isHidden = false;
     }
 
-    public void IsHidden()
+    public bool IsHidden()
     {
         return _isHidden;
     }
@@ -28,6 +28,17 @@ public class Word
     {
         if (_isHidden)
         {
+            string displaytext = "";
+
+            for (int i = 0; i < _text.Length; i++)
+            {
+                displaytext += "_";
+            }
+            return displaytext;
+        }
+        else
+        {
+            return _text;
         }
     }
 
