@@ -43,18 +43,22 @@ Class: Product
     private _productQuantity: int
     private _productTotal: double
 
+    Contructors:
     public Product()
     public Product(productName, ProductID, ProductPrice, productQuantity)
 
-
+    Methods:
     private double calculateProductTotal()
-        return _productQuantity * _productPrice - discount
+        return _productQuantity * _productPrice
  
 
 Class: Customer
     Variables:
     private _customerName: string
     private _customerAddress: Address
+
+    Contructors:
+    public Customer()
 
     public bool USAorNot()
 
@@ -67,6 +71,9 @@ Class: Address
     private _state: string
     private _country: string
 
+    Contructors:
+    public Address()
+
     public bool USAorNot()
 
     public string displayAddress()
@@ -77,6 +84,9 @@ Class: Order
     private _product: List
     private _customer: object    
     private _orderTotal: double
+
+    Contructors:
+    public Order()
 
     Return Shipping label: string
     Return Packing label: string
