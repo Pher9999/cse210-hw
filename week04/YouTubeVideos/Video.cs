@@ -1,8 +1,8 @@
 public class Video
 {
-    string _title;
-    string _author;
-    int _length;
+    private string _title;
+    private string _author;
+    private int _length;
 
     public Video()
     {
@@ -21,6 +21,11 @@ public class Video
     public string displayVideo()
     {
         return $"Title: {_title}\nAuthor: {_author}\nLength: {_length} seconds";
+    }
+
+    public int GetNumOfComments()
+    {
+        return _comment.Count();
     }
 
 }

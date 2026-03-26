@@ -1,0 +1,81 @@
+YouTube Video
+
+ Class: Video
+    Variables:
+    private _Title: string
+    private _Author: string
+    private _length: int
+    private _comment: List
+
+    Contructors:
+    Video()
+    Video(title, author)
+    Video(title, author, length)
+
+    Methods:
+    public string displayVideo()
+         return $"Title: {_title}\nAuthor: {_author}\nLength: {_length} seconds"; 
+
+    public int GetNumOfComments()
+      return _comment.Count()  
+ 
+     
+
+ Class: Comment
+    Variables:
+    private _commenterName: string
+    private _commentText: string
+
+    Contructors:
+    Comment()
+    Comment(Name, Comment)
+
+    DisplayComment()
+        return Name and comment
+
+
+Online Ordering 
+Class: Product
+    _productName: string
+    _productID: string
+    _productPrice: double
+    _productQuantity: int
+    _productTotal: double
+
+    public Product()
+    public Product(productName, ProductID, ProductPrice, productQuantity)
+
+
+    private double calculateProductTotal()
+        return _productQuantity * _productPrice - discount
+ 
+
+Class: Customer
+    private _customerName: string
+    private _customerAddress: Address
+
+    public bool USAorNot()
+
+    public shippingLabel()
+
+Class: Address
+    private _street: string
+    private _city: string
+    private _state: string
+    private _country: string
+
+    public bool USAorNot()
+
+    public string displayAddress()
+
+
+Class: Order
+    _product: List
+    _customer: object    
+    _orderTotal: double
+
+    Return Shipping label: string
+    Return Packing label: string
+
+
+

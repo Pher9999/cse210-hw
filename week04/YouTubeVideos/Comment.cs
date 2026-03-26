@@ -1,21 +1,21 @@
 public class Comment
 {
-    string _commenterName;
-    string _commentText;
+    private string _commentName;
+    private string _commentText;
 
     public Comment()
     {
-        _commenterName = "";
+        _commentName = "";
         _commentText = "";
     }
     public Comment(string commentName, string commentText)
     {
-        _commenterName = commentName;
+        _commentName = commentName;
         _commentText = commentText;
     }
 
     public string displayComment()
     {
-        return $"Comment by {_commenterName}: \"{_commentText}\"";
+        return $"Comment by {_commentName}: \"{_commentText}\"";
     }
 }
