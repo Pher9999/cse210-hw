@@ -8,4 +8,14 @@ public class Customer
         _name = name;
         _address = address;
     }
+
+    public string isDomestic()
+    {
+        return _address.isDomestic();
+    }
+
+    public string displayCustomerInfo()
+    {
+        return $"Customer Name: {_name}\nAddress: {_address.getFullAddress()}\nCustomer Type: {isDomestic()}";
+    }
 }

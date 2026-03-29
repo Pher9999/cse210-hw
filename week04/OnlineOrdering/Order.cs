@@ -18,4 +18,22 @@ public class Order
         }
         return totalPrice;
     }
+
+    public string displayOrderDetails()
+    {
+        string orderDetails = _customer.displayCustomerInfo() + "\nProducts:\n";
+        foreach (Product product in _products)
+        {
+            orderDetails += $"- {product.getProductInfo()}\n";
+        }
+        orderDetails += $"Shipping Cost: {shippingCost():C}\n";
+        double _ordertotalPrice = getTotalPrice() + shippingCost();
+        orderDetails += $"Total Price: {_ordertotalPrice:C}";
+        return orderDetails;
+    }
+
+    public double shippingCost()
+    {
+        return _customer.isDomestic() == "Domestic" ? 5.00 : 35.00;
+    }
 }

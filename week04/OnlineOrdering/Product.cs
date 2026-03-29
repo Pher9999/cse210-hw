@@ -17,4 +17,9 @@ public class Product
     {
         return _price * _quantity;
     }
+
+    public string getProductInfo()
+    {
+        return $"Product Name: {_name}, Product ID: {_productId}, Price: {_price:C}, Quantity: {_quantity}: Total: {getTotalPrice():C}";
+    }
 }
