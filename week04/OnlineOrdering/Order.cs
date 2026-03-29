@@ -36,4 +36,19 @@ public class Order
     {
         return _customer.isDomestic() == "Domestic" ? 5.00 : 35.00;
     }
+
+    public string getPackingLabel()
+    {
+        string packingLabel = "Packing Label:\n";
+        foreach (Product product in _products)
+        {
+            packingLabel += $"- {product.getProductInfo()}\n";
+        }
+        return packingLabel;
+    }
+
+    public string getShippingLabel()
+    {
+        return $"Shipping Label:\n{_customer.displayCustomerInfo()}";
+    }
 }
