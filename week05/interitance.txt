@@ -1,0 +1,28 @@
+Chris Riordan  
+Explaining Inheritance
+
+Inheritance is the ability to build upon the structure of another class. 
+To extend it's functionality. It allows to keep code compartmentalized. As in the lesson about books. 
+You have a base class for Books, But subclasses for different types of books, based on other data that is more 
+specific to that object.
+
+
+Below is the MathAssignement class from this weeks assignment, where it builds upon Assignment Class to further detail what kind of assignment.
+
+public class MathAssignment : Assignment
+{
+    public string _textbookSection;
+    public string _problems;
+
+    public MathAssignment(string studentName, string topic, string textbookSection, string problems) : base(studentName, topic)
+    {
+        _textbookSection = textbookSection;
+        _problems = problems;
+    }
+
+    public string GetHomeworkList()
+    {
+        return $"{_studentName} is working on {_problems} in section {_textbookSection}";
+    }
+
+}
