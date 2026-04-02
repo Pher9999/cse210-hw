@@ -10,3 +10,35 @@ Class Activity:
     DisplayEndingMessage()
     ShowSpinner(seconds: int)
     ShowCountDown(second: int)
+
+Class BreathingActivity:
+    Variables:
+
+
+    Methods:
+    Run() : void
+
+Class ListingActivity:
+    Variables:
+
+    private int _count
+    private List<string _prompts
+
+    Methods:
+    Run() : void
+    GetRandomPrompt() : string
+    GetListFromUser() : List<string>
+
+
+Class ReflectingActivity:
+    Variables:
+        private List<string> _prompts
+        List<string> _prompts = new List<string>();
+        private List<string> _questions
+
+    Methods:
+    Run() : void
+    GetRandomPrompt() : string
+    GetRandomQuestion() : string
+    DisplayPrompt() : void
+    DisplayQuestion() : void
