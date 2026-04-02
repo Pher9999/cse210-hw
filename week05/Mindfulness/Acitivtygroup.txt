@@ -1,0 +1,12 @@
+Class Activity:
+    Variables:
+    protected  string _name
+    protected string _description
+    protected int _duration
+
+    Methods:
+    Activity()
+    DisplayStartMessage()
+    DisplayEndingMessage()
+    ShowSpinner(seconds: int)
+    ShowCountDown(second: int)
