@@ -1,0 +1,32 @@
+Chris Riordan
+CSE210
+
+What is polymorphism and why is it important?
+
+Is a way to have a wizard in DnD, control a mob character while fighting another. Oh wait, This is meant for Programming.
+ In programming it's a way to have one method call can lead to multiple solutions based on the class. In our class assignment, 
+ We used GetArea(), for various different shapes. This allows for the base class to use the same Method naming for each different 
+ sub-class without having to worry about coding for the different possibilities in the main code. So for a Square, Circle, Rectangle, Triangle. 
+ We can use the same Method name, but based on the object in the class determine what method is correct. This is helps wrap up the other principles.
+ Abstraction, Encapsulation, and Inheritance, polymorphism allows it all to work together. 
+
+ List<Shape> shapes = new List<Shape>();
+        Square s1 = new Square("Red", 3);
+        shapes.Add(s1);
+        Rectangle r1 = new Rectangle("Blue", 4, 5);
+        shapes.Add(r1);
+        Circle circle1 = new Circle("Green", 2);
+        shapes.Add(circle1);
+        foreach (Shape shape in shapes)
+        {
+            string color = shape.GetColor();
+
+            double area = shape.GetArea();
+
+
+            Console.WriteLine($"Shape: {color} shape has an area of {area}");
+        }
+
+GetArea is a override method, for the shape class, based on what is the child class created. 
+
+
