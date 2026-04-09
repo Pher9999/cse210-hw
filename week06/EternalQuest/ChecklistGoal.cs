@@ -31,8 +31,7 @@ public class ChecklistGoal : Goal
 
     public override string GetDetailsString()
     {
-        // Return a string with the checklist goal's details, including progress
-        return $"{_shortName}: {_description} ({_points} points) - Progress: {_amountCompleted}/{_target}";
+        return $"{_shortName} ({_description}) -- Currently completed: {_amountCompleted}/{_target}";
     }
     public override string GetStringRepresentation()
     {

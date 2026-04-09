@@ -1,0 +1,72 @@
+Class: 
+    Goal
+
+Variables:
+    _shortName: string
+    _description: string
+    _points: int
+
+Method: 
+    Goal(name: string, description: string, points: int)
+    void RecordEvent() Abstract
+    bool IsComplete() Abstract
+    string GetDetailsString()
+    string GetStringRepresentation() Abstract
+
+Class: 
+    SimpleGoal
+
+Variables:
+    IsComplete : bool
+
+Method:
+    SimpleGoal(name: string, description: string, points: int)
+    void RecordEvent() Override
+    bool IsComplete() Override
+    string GetStringRepresentation() Override
+
+Class: 
+    EternalGoal
+
+Variables:
+    None
+
+Method:
+    EternalGoal(name: string, description: string, points: int)
+    void RecordEvent() Override
+    bool IsComplete() Override
+    string GetStringRepresentation() Override
+
+Class: 
+    ChecklistGoal
+
+Variables:
+    _amountCompleted: int
+    _target: int
+    _bonus: int
+
+Method:
+    ChecklistGoal( name: string, description: string, points: int, bonus: int)
+    void RecordEvent() Override
+    bool IsComplete() Override
+    string GetDetailsString() Override
+    string GetStringRepresentation() Override
+
+
+Class: 
+    GoalManager
+
+Variables:
+    _goals: List<Goal>
+    _score: int
+
+Method:
+    GoalManager()
+    void Start()
+    void DisplayPlayerInfo()
+    void ListGoalNames()
+    void ListGoalDetails()
+    void CreateGoal()
+    void RecordEvent()
+    void SaveGoals()
+    void LoadGoals()

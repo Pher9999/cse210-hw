@@ -23,4 +23,10 @@ public class SimpleGoal : Goal
         // Return a string representation of the simple goal for saving to a file
         return $"SimpleGoal|{_shortName}|{_description}|{_points}";
     }
+
+    public override string GetDetailsString()
+    {
+        string status = _isCompleted ? "[X]" : "[ ]";
+        return $"{status} {_shortName} ({_description})";
+    }
 }

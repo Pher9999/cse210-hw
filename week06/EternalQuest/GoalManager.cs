@@ -1,3 +1,5 @@
+using System.IO;
+
 public class GoalManager
 {
     protected List<string> _goals = new List<string>();
@@ -27,12 +29,21 @@ public class GoalManager
             switch (menuChoice)
             {
                 case "1":
-
+                    Console.WriteLine("Create New Goal");
                     break;
                 case "2":
-                    ViewInventory();
+                    Console.WriteLine("List Goals");
                     break;
                 case "3":
+                    Console.WriteLine("Save Goals");
+                    break;
+                case "4":
+                    Console.WriteLine("Load Goals");
+                    break;
+                case "5":
+                    Console.WriteLine("Record Event");
+                    break;
+                case "6":
                     Console.WriteLine("Exiting the game. Goodbye!");
                     break;
                 default:
@@ -40,6 +51,7 @@ public class GoalManager
                     break;
             }
         }
+    }
 
     public void DisplayPlayerInfo()
     {
@@ -67,9 +79,21 @@ public class GoalManager
     public void SaveGoals(string filename)
     {
         // Save the current goals and score to a file
+        using (StreamWriter outputFile = new StreamWriter(filename))
+        {
+            outputFile.WriteLine("This is the first line of the file");
+        }
+
     }
     public void LoadGoals(string filename)
     {
         // Load goals and score from a file
+        string[] lines = System.IO.File.ReadAllLines(filename);
+
+        foreach (string line in lines)
+        {
+            string[] parts = line.Split(";");
+
+        }
     }
 }

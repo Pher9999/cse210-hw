@@ -21,6 +21,11 @@ public class EternalGoal : Goal
     public override string GetStringRepresentation()
     {
         // Return a string representation of the eternal goal for saving to a file
-        return $"EternalGoal|{_shortName}|{_description}|{_points}|{_currentProgress}";
+        return $"EternalGoal|{_shortName}|{_description}|{_points}";
+    }
+
+    public override string GetDetailsString()
+    {
+        return $"{_shortName} ({_description})";
     }
 }
