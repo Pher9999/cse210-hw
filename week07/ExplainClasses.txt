@@ -1,0 +1,25 @@
+Chris Riordan - CSE210
+You have now learned about each of four principles of Programming with Classes:
+
+Abstraction
+Encapsulation
+Inheritance
+Polymorphism
+You have also used these principles to design and develop projects throughout the course (including the standard projects and the Foundation programs).
+
+Abstraction the process of making complex ideas into simple ones.
+Encapsulation the process of hiding the details from the public code. 
+Inheritance is the ability of a class to gain the attributes and methods of another class directly
+Polymorphism is an extension of Inheritance, allowing the same method names in multiple child classes each doing different things.
+
+Each of these principles builds upon the previous, Without Abstraction then the rest don't work. In the final program for Exercise tracking, We use all the principles.
+Polymorphism is a more detailed form of Encapsulation, which relies on Inheritance to function. All making done in Abstraction. 
+
+We call one object, Which can have an override to be 3 different objects with similar properties. Running, Cycling, Swimming are
+ all forms of Activities. However each one has different variables to track and calculate. Like Nesting dolls, Each of the subclasses 
+ can access the main activity class, but allow the same public interface to the activities. To get the Pace, Distance, Speed, 
+ It all can call the same method, And know what class for the object you are referring to. If we wanted to change the output for the
+ Running activity, we can without having to touch Swimming or Cycling classes. 
+
+
+
