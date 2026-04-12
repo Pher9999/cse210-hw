@@ -49,7 +49,8 @@ public class GoalManager
                             string goalDescription = Console.ReadLine();
                             Console.WriteLine("What is the amount of points associated with this goal?");
                             int goalPoints = int.Parse(Console.ReadLine());
-                            _goals.Add(new SimpleGoal(goalName, goalDescription, goalPoints));
+                            SimpleGoal sGoal = new SimpleGoal(goalName, goalDescription, goalPoints);
+                            _goals.Add(sGoal);
                             break;
                         case "2":
                             Console.WriteLine("You have chosen to create an Eternal Goal.");
@@ -59,7 +60,8 @@ public class GoalManager
                             goalDescription = Console.ReadLine();
                             Console.WriteLine("What is the amount of points associated with this goal?");
                             goalPoints = int.Parse(Console.ReadLine());
-                            _goals.Add(new EternalGoal(goalName, goalDescription));
+                            EternalGoal eGoal = new EternalGoal(goalName, goalDescription, goalPoints);
+                            _goals.Add(eGoal);
                             break;
                         case "3":
                             Console.WriteLine("You have chosen to create a Checklist Goal.");
