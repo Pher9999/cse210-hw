@@ -5,12 +5,18 @@ public class EternalGoal : Goal
         : base(shortName, description, points)
     {
         // Initialize the eternal goal
+        _shortName = shortName;
+        _description = description;
+        _points = points;
 
     }
 
     public override void RecordEvent(string eventDescription)
     {
         // Record an event specific to an eternal goal
+        Console.WriteLine($"Event recorded for goal '{_shortName}': {eventDescription}");
+
+
     }
 
     public override bool IsCompleted()

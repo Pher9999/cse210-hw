@@ -13,7 +13,6 @@ public abstract class Goal()
 
     public abstract void RecordEvent(string eventDescription);
 
-
     public abstract bool IsCompleted();
 
     public abstract string GetDetailsString();
